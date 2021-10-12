@@ -1,0 +1,74 @@
+﻿<Window
+    x:Class="Estaciones.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Estaciones"
+    mc:Ignorable="d"
+    Title="Estaciones"
+    Height="450"
+    Width="800"
+    Icon="assets/plant.ico">
+
+    <DockPanel
+        Background="#FFF4EEFA">
+        <Label
+            DockPanel.Dock="Top"
+            HorizontalAlignment="Center"
+            FontSize="36"
+            FontWeight="Bold"
+            Background="{x:Null}">
+            <Label.Effect>
+                <DropShadowEffect
+                    Opacity="0.5"
+                    Color="#FF5100FF"
+                    BlurRadius="10">
+                    
+                </DropShadowEffect>
+            </Label.Effect>
+            <Label.Foreground>
+                <LinearGradientBrush
+                    EndPoint="0.5,1"
+                    StartPoint="0.5,0">
+                    <GradientStop
+                        Color="#FFFF8D00"
+                        Offset="0.331" />
+                    <GradientStop
+                        Color="#FF360FFF"
+                        Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground> Las 4 estaciones
+        </Label>
+        <UniformGrid>
+            <ScrollViewer
+                Margin="10"
+                VerticalScrollBarVisibility="Visible"
+                HorizontalScrollBarVisibility="Visible">
+                <Image
+                    Source="assets/invierno.jpg"></Image>
+            </ScrollViewer>
+            <ScrollViewer
+                Margin="10"
+                VerticalScrollBarVisibility="Visible"
+                HorizontalScrollBarVisibility="Visible">
+                <Image
+                    Source="assets/primavera.jpg"></Image>
+            </ScrollViewer>
+            <ScrollViewer
+                Margin="10"
+                VerticalScrollBarVisibility="Visible"
+                HorizontalScrollBarVisibility="Visible">
+                <Image
+                    Source="assets/verano.jpg"></Image>
+            </ScrollViewer>
+            <ScrollViewer
+                Margin="10"
+                VerticalScrollBarVisibility="Visible"
+                HorizontalScrollBarVisibility="Visible">
+                <Image
+                    Source="assets/otoño.jpg"></Image>
+            </ScrollViewer>
+        </UniformGrid>
+    </DockPanel>
+</Window>
